@@ -1,0 +1,25 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    
+
+}
+.header-logo{
+    height: 32px;
+    width: 147px;
+    margin-top: 39px;
+    margin-left: 24px;
+
+}
+.header-background{
+    background-image: url(./bg-main-mobile.png);
+    background-repeat: no-repeat;
+    width:281px;
+
+}   
