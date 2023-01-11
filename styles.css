@@ -28,13 +28,16 @@ header{
     background-image: url(assets/bg-main-mobile.png);
     background-repeat: no-repeat;
     width:100%;
-    height: 630px;
-    background-position:  top left;
-    margin-top:-170px;
+    height: 630px; 
+    background-position-y: -170px;
+    
 }  
 .header-background-tablet{
     display: none;
 } 
+.header-background-desktop{
+    display: none;
+}
 .header-image{
     display: none;   
 }
@@ -63,8 +66,7 @@ header{
     
 
 }.black-box{
-    background-color: #191826;
-    
+    background-color: #191826; 
     height: 600px;
     width: 100%;
     border-radius: 12px;
@@ -73,7 +75,6 @@ header{
     background-position: center top;
     position: relative;
     Z-index: -1;
-    margin-top: 166px;
 }
 
 .mobile-img{
@@ -198,8 +199,7 @@ footer{
 .footer-logo{
     height: 32px;
     width: 147px;  
-    top:40px;
-    left:24px; 
+   
     
 }
 .footer-text{
@@ -230,8 +230,8 @@ footer{
 }
 @media(min-width:768px){
     main{
-        margin-left: 33px;
-        margin-right: 33px;
+        padding-left: 33px;
+        padding-right: 33px;
     }
     .header-background-mobile{
         display:none;
@@ -240,9 +240,10 @@ footer{
         display: block;
         background-image: url(./assets/bg-main-tablet.png); 
         width:100%;
-        height: 750px;
-        background-position: right bottom;
-        background-position-y: center top;
+        height: 730px;
+       background-position-y: 3000px;
+       background-position-x: -350px;
+       
     }
      .header-logo{
         margin-top: 61px;
@@ -254,28 +255,27 @@ footer{
         position: absolute;
         top:-35px;
         right:-45px;
-        
+        width:266px;
     }
     .introductory-box-title{ 
         font-family: IBM Plex Sans;
         font-size: 64px;
         font-weight: 700;
         line-height: 64px;
-        letter-spacing: -0.7272727489471436px;
+        letter-spacing: -0.7px;
         margin-left: 39px;
         margin-bottom: 28px;
-        width: 520px;
+       margin-right: 176px;
 
     }
     .introductory-box-text{
         font-family: IBM Plex Sans;
         font-size: 18px;
         font-weight: 400;
-        line-height: 28px;
-        letter-spacing: 0px;
+        line-height: 28px;   
         text-align: left;
-        width: 514px;
         margin-left: 39px;
+        margin-right: 176px;
        
     }
     .black-box{
@@ -284,18 +284,20 @@ footer{
     }
     .mobile-img{
         width:270px;
-        margin-left: 64px;
+        margin-left: 55px;
         margin-top: -120px;
     }
     .pink-box{     
        margin-left:265px;
-       margin-top: -410px;
+       margin-top: -390px;
        width:399px;
+       
     }
     footer{
         padding-bottom: 85px;
         padding-left: 33px;
         padding-right: 33px;
+        padding-top: 87px;
         display: flex;
         justify-content: space-between;
         flex-direction: row;
@@ -303,11 +305,120 @@ footer{
     .footer-logo{
         height: 32px;
         width: 147px;  
-        top:40px;
-        left:24px;
+        
     }
     .footer-text{
         width:366px;
+    }
+    
+}
+@media(min-width: 1440px){
+    main{
+        padding: 0 165px 0 165px;
+    }
+    .header-background-tablet{
+        display: none;
+    }
+    .header-background-desktop{
+        display: block;
+        background-image: url(./assets/bg-main-desktop.png); 
+        width:100%;
+        height: 1100px;
+        background-position-x: -230px;        
+        margin-top: -300px;
+    }
+    .header-image{
+        width:312px;
+    }
+    .header-logo{
+        margin-left: 165px;
+        margin-bottom: 127px;
+        
+     } 
+    
+    .introductory-box-title{ 
+        font-family: IBM Plex Sans;
+        font-size: 88px;
+        font-weight: 700;
+        line-height: 88px;
+        letter-spacing: -1px;
+        text-align: left;
+        margin-left: 165px;
+        margin-bottom: 40px;
+        margin-right: 450px;
+
+    }
+    .introductory-box-text{
+        font-family: IBM Plex Sans;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 34px;
+        letter-spacing: 0px;
+        text-align: left;
+        margin-left: 165px;
+        margin-right: 450px;
+    }
+    .black-box{
+        background-position-x: 320px;
+        margin-top: 90px;
+    }
+    .mobile-img{
+        width:280px;
+        height: 606px;
+        margin-left: 118px;
+        margin-top: -195px;
+    }
+    .pink-box{     
+        margin-left:569px;
+        margin-top: -460px;
+        width:446px;
+        height: 625px;
+        padding: 58px 59px 48px 54px;
+   
+    }
+    .pink-box-title{
+        font-family: IBM Plex Sans;
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 52px; 
+        
+    }
+    .pink-box-text{
+        font-family: IBM Plex Sans;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 34px;
+    } 
+      
+    .ios-button{
+        width: 333px;
+        height: 61px;
+        gap:11px;
+    }
+    .android-button{
+        width:333px;
+        height:61px;
+        gap:11px;
+    }
+    footer{
+        padding-bottom: 91px;
+        padding-left: 166px;
+        padding-right: 166px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+    }
+    .works-on-desktop{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        gap:138px;
+    }
+    .footer-text{
+        margin-top: 0;
+    }
+    .footer-icons{
+        margin-top: 0;
     }
     
 }
