@@ -7,7 +7,8 @@
 }
 body{
     font-family: 'IBM Plex Sans';
-    overflow: hiddencd;
+    overflow-x: hidden;
+    
 }
 header{
     position: relative;
@@ -246,6 +247,11 @@ footer{
        background-position-x: -350px;
        
     }
+    .header-container-position{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+    }
      .header-logo{
         margin-top: 61px;
         margin-left: 39px;
@@ -253,9 +259,7 @@ footer{
      } 
     .header-image{
         display: block;
-        position: absolute;
-        top:-35px;
-        right:-45px;
+        transform: translate(25px, -25px);
         width:266px;
     }
     .introductory-box-title{ 
@@ -266,7 +270,7 @@ footer{
         letter-spacing: -0.7px;
         margin-left: 39px;
         margin-bottom: 28px;
-       margin-right: 176px;
+       /* margin-right: 176px; */
 
     }
     .introductory-box-text{
@@ -276,7 +280,7 @@ footer{
         line-height: 28px;   
         text-align: left;
         margin-left: 39px;
-        margin-right: 176px;
+        /* margin-right: 176px; */
        
     }
     .black-box{
@@ -317,6 +321,9 @@ footer{
     main{
         padding: 0 165px 0 165px;
     }
+    body{
+        overflow: none;
+    }
     .header-background-tablet{
         display: none;
     }
@@ -330,7 +337,9 @@ footer{
     }
     .header-image{
         width:312px;
+        transform: translate(0,-25px);
     }
+    
     .header-logo{
         margin-left: 165px;
         margin-bottom: 127px;
@@ -346,7 +355,7 @@ footer{
         text-align: left;
         margin-left: 165px;
         margin-bottom: 40px;
-        margin-right: 450px;
+        /* margin-right: 450px; */
 
     }
     .introductory-box-text{
@@ -357,7 +366,7 @@ footer{
         letter-spacing: 0px;
         text-align: left;
         margin-left: 165px;
-        margin-right: 450px;
+        /* margin-right: 450px; */
     }
     .black-box{
         background-position-x: 320px;
